@@ -6,11 +6,24 @@
   "version": "1.0",
 
   "permissions": [
+    //"tabs",
     "https://pan.baidu.com/",
     "http://localhost/"
   ],
+
   "browser_action": {
     "default_icon": "img/icon.png",
     "default_popup": "popup.html"
-  }
+  },
+
+  "content_scripts": [{  
+         "matches": ["http://pan.baidu.com/*","https://pan.baidu.com/*"],   
+         "js": ["content.js"],   
+         "run_at": "document_start",  
+         "all_frames": true   
+    }]
+
+  //"background": {
+  //  "scripts": ["background.js"]
+  //}
 }
