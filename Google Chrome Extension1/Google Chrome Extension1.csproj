@@ -53,6 +53,7 @@
     <None Include="scripts\_references.js" />
     <None Include="scripts\chrome-api-vsdoc.js" />
     <Content Include="web.config" />
+    <Content Include="test.py" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
