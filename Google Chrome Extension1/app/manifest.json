@@ -1,0 +1,16 @@
+﻿{
+  "manifest_version": 2,
+
+  "name": "Baidu 密码获取",
+  "description": "获取百度云密码。",
+  "version": "1.0",
+
+  "permissions": [
+    "https://pan.baidu.com/",
+    "http://localhost/"
+  ],
+  "browser_action": {
+    "default_icon": "img/icon.png",
+    "default_popup": "popup.html"
+  }
+}
